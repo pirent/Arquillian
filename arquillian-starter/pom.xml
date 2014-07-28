@@ -34,5 +34,12 @@
       <version>4.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    	<groupId>org.jboss.spec</groupId>
+    	<artifactId>jboss-javaee-6.0</artifactId>
+    	<version>1.0.0.Final</version>
+    	<type>pom</type>
+    	<scope>provided</scope>
+    </dependency>
   </dependencies>
 </project>
