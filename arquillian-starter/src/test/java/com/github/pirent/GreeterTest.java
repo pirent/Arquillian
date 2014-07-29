@@ -23,8 +23,9 @@ public class GreeterTest {
 	@Deployment
 	public static JavaArchive createDeployment() {
 		JavaArchive jar = ShrinkWrap.create(JavaArchive.class);
-		jar.addClass(Greeter.class).addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
-		
+		jar.addClasses(Greeter.class, PhraseBuilder.class)
+				.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
+
 		System.out.println("*---- Archiving: \n" + jar.toString(true) + "\n ----*");
 		
 		return jar;
