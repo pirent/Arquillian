@@ -17,6 +17,7 @@
 	<modules>
 		<module>arquillian-starter</module>
 		<module>arquillian-rinse-and-repeat</module>
+		<module>arquillian-jpa</module>
 	</modules>
 
 	<properties>
