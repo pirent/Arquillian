@@ -1,4 +1,4 @@
-package com.github.pirent;
+package com.github.pirent.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,6 +12,15 @@ import javax.ejb.Singleton;
 
 import com.github.pirent.api.OrderRepository;
 
+/**
+ * In-memory implementation for testing purpose only.
+ * <p>
+ * For the purpose of this example, let's assume that the
+ * {@link OrderRepository} is being implemented by another team.
+ * 
+ * @author pirent
+ *
+ */
 @Singleton
 @Local(OrderRepository.class)
 @Lock(LockType.READ)
